@@ -117,7 +117,7 @@ export const Skills = () => {
             whileInView={{opacity:1, y:0}}
             initial={{opacity:0, y:-100}}
             transition={{duration:0.5}}
-            className="my-20 text-center text-4xl">Systèmes d'exploitation</motion.h1>
+            className="my-20 text-center text-4xl">Systèmes d&apos;exploitation</motion.h1>
             <motion.div 
             whileInView={{opacity:1, y:0}}
             initial={{opacity:0, y:100}}

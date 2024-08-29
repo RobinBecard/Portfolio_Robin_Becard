@@ -29,7 +29,10 @@ export const Hero = () => {
                         variants={container(0.5)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-orange-500 via-white to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">Étudiant ingénieur à l'<a href="https://eilco.univ-littoral.fr/">EILCO</a></motion.span>
+                        className="bg-gradient-to-r from-orange-500 via-white to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
+                        Étudiant ingénieur à l&apos;<a href="https://eilco.univ-littoral.fr/">EILCO</a>
+                    </motion.span>
+
                     <motion.p
                         variants={container(1)}
                         initial="hidden"
