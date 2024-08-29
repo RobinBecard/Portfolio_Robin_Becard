@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles/globals.css */
+
+@font-face {
+  font-family: 'Ethnocentric RG';
+  src: url('/font/ethnocentric rg it.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
