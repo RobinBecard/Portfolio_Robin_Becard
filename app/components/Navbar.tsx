@@ -10,10 +10,13 @@ export const Navbar = () => {
             RB
         </div>
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-            <LinkedinFilled/>
-            <GithubFilled/>
-            <InstagramOutlined/> 
-            <TwitterOutlined/>
+
+            <a href="https://www.linkedin.com/in/robin-becard" target="_blank" rel="noopener noreferrer">
+                <LinkedinFilled />
+            </a>
+            <a href="https://github.com/RobinBecard" target="_blank" rel="noopener noreferrer">
+                <GithubFilled />
+            </a>
         </div>
     </nav>
 }
