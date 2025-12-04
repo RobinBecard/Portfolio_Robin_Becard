@@ -96,5 +96,5 @@ export const PROJECTS = [
 export const CONTACT = {
   adress: "Sherbrooke J1H 5E9, Québec, Canada",
   email: "robinbecard@gmail.com",
-  number: "(+33)7 71 82 99 16",
+  number: "(+33) 7 71 82 99 16",
 };
