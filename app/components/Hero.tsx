@@ -30,7 +30,7 @@ export const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         className="bg-gradient-to-r from-orange-500 via-white to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
-                        Étudiant ingénieur à l&apos;<a href="https://eilco.univ-littoral.fr/">EILCO</a>
+                        Étudiant ingénieur en double diplôme à à l&apos;<a href="https://www.usherbrooke.ca/ia/">Université de Sherbrooke</a> et à l&apos;<a href="https://eilco.univ-littoral.fr/">EILCO</a> 
                     </motion.span>
 
                     <motion.p

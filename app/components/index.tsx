@@ -4,7 +4,7 @@ export const HERO_CONTENT =
 export const ABOUT_CONTENT = (
   <div>
     <p className="indent-8">
-      Je suis <strong>Robin BECARD</strong>, étudiant en <strong>double diplôme en intelligence artificielle et science des données</strong> entre l’<strong>Université de Sherbrooke</strong> et l’<strong>École d’Ingénieurs du Littoral Côte d’Opale (EILCO)</strong>. Ce cursus me permet d’approfondir les fondements de l’IA tout en consolidant mes compétences d’ingénieur en informatique.
+      Je me présente, je suis <strong>Robin BECARD</strong>, étudiant en <strong>double diplôme en intelligence artificielle et science des données</strong> entre l’<strong>Université de Sherbrooke</strong> et l’<strong>École d’Ingénieurs du Littoral Côte d’Opale (EILCO)</strong>. Ce cursus me permet d’approfondir les fondements de l’IA tout en consolidant mes compétences d’ingénieur en informatique.
     </p>
     <br />
     <p className="indent-8">
@@ -21,22 +21,39 @@ export const ABOUT_CONTENT = (
   </div>
 );
 
+import Eilco_logo from "../assets/EILCO.png";
+import Udes_logo from "../assets/UdeS.png";
+
+export const FORMATIONS = [
+  {
+    year : "2025 - Présent",
+    degree : "Maîtrise en informatique - cheminement Intelligence Artificielle et Science des Données",
+    institution : "Université de Sherbrooke, Québec, Canada",
+    image: Udes_logo,
+    website : "https://www.usherbrooke.ca/"
+  },
+  {
+    year: "2021 - Présent",
+    degree: "Diplôme d'ingénieur en génie informatique (double diplôme)",
+    institution : "École d'Ingénieurs du littoral Côte d'Opale (EILCO), Calais, France",
+    image: Eilco_logo,
+    website: "https://eilco.univ-littoral.fr/",
+  },
+]
+
+import Busipart_logo from "../assets/Busipart.png";
+import LeroyMerlin_logo_logo from "../assets/LeroyMerlin.png";
+import Edf_logo from "../assets/Edf.png";
+
 export const EXPERIENCES = [
   {
     year: "Juin 2025 - Juillet 2025",
     role: "Développeur Full‑Stack (Stage)",
     company: "BUSIPART, Saint-Martin-Boulogne",
     description:
-      "Développement d’une application web de supervision des machines virtuelles sur Google Cloud Platform, intégrant les APIs GCP pour centraliser les métriques d’infrastructure et mettre en place des alertes automatisées. Participation à la conception de l’architecture, à l’implémentation front‑end / back‑end et à la rédaction d’une documentation pour les équipes internes.",
+      "Développement d’une application web de supervision des machines virtuelles sur Google Cloud Platform (GCP), intégrant les APIs GCP pour centraliser les métriques d’infrastructure et mettre en place des alertes automatisées. Participation à la conception de l’architecture, à l’implémentation front‑end / back‑end et à la rédaction d’une documentation pour les équipes internes.",
     technologies: ["Python", "JavaScript", "React", "API REST", "GCP"],
-  },
-  {
-    year: "Janvier 2023 - Février 2023",
-    role: "Développeur VBA (Stage)",
-    company: "EDF, CNPE de Gravelines",
-    description:
-      "Conception et déploiement d’un outil Excel/VBA pour organiser et tracer les fichiers du service « Équipe Commune ». Analyse des besoins des utilisateurs, modélisation de l’organisation des dossiers, développement de macros pour automatiser le classement et la recherche de documents, puis rédaction d’une documentation et accompagnement des équipes à la prise en main.",
-    technologies: ["Excel", "VBA", ""],
+    image: Busipart_logo,
   },
   {
     year: "Juillet 2023",
@@ -45,18 +62,19 @@ export const EXPERIENCES = [
     description:
       "Accueil des transporteurs, chargement et déchargement des livraisons, gestion des retours en rayon et des déchets du magasin. Contribution au bon fonctionnement de la logistique et au support des équipes de vente.",
     technologies: ["Gestion logistique"],
+    image: LeroyMerlin_logo_logo,
   },
   {
-    year: "2018 - 2019",
-    role: "Stagiaire assistant dessinateur",
-    company: "Maisons d’en Flandre, Hazebrouck",
+    year: "Janvier 2023 - Février 2023",
+    role: "Développeur VBA (Stage)",
+    company: "EDF, CNPE de Gravelines",
     description:
-      "Découverte de la conception de maisons individuelles avec le logiciel Allplan. Support à la réalisation de plans (électricité, gros œuvre, plans d’évacuation) et familiarisation avec les contraintes techniques du bâtiment.",
-    technologies: ["Allplan"],
+      "Conception et déploiement d’un outil Excel/VBA pour organiser et tracer les fichiers du service « Équipe Commune ». Analyse des besoins des utilisateurs, modélisation de l’organisation des dossiers, développement de macros pour automatiser le classement et la recherche de documents, puis rédaction d’une documentation et accompagnement des équipes à la prise en main.",
+    technologies: ["Pack Office", "VBA"],
+    image: Edf_logo,
   },
 ];
 
-import Image from "next/image";
 import Projet1 from "../assets/Projet_1.png";
 import Projet2 from "../assets/Projet_2.jpg";
 import Projet3 from "../assets/Projet_3.jpg";
