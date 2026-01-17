@@ -1,22 +1,22 @@
-export const HERO_CONTENT =
-  "Passionné par l’intelligence artificielle, la science des données et le développement logiciel, je m’implique chaque jour dans des projets mêlant informatique, électronique et nouvelles technologies. Chaque défi est pour moi l’occasion de concevoir des solutions fiables, d’explorer des approches innovantes et de renforcer mes compétences techniques. Mon parcours en double diplôme entre l’Université de Sherbrooke et l’EILCO nourrit une curiosité constante et une envie de toujours aller plus loin. J’apprécie particulièrement la résolution de problèmes complexes, l’optimisation de systèmes et la mise en production d’applications modernes.";
+  export const HERO_CONTENT =
+    "Passionné par l’intelligence artificielle, la science des données et le développement logiciel, je m’implique chaque jour dans des projets mêlant informatique, électronique et nouvelles technologies. Chaque défi est pour moi l’occasion de concevoir des solutions fiables, d’explorer des approches innovantes et de renforcer mes compétences techniques. Mon parcours en double diplôme entre l’Université de Sherbrooke et l’EILCO nourrit une curiosité constante et une envie de toujours aller plus loin. J’apprécie particulièrement la résolution de problèmes complexes, l’optimisation de systèmes et la mise en production d’applications modernes.";
 
 export const ABOUT_CONTENT = (
-  <div>
-    <p className="indent-8">
-      Je me présente, je suis <strong>Robin BECARD</strong>, étudiant en <strong>double diplôme en intelligence artificielle et science des données</strong> entre l’<strong>Université de Sherbrooke</strong> et l’<strong>École d’Ingénieurs du Littoral Côte d’Opale (EILCO)</strong>. Ce cursus me permet d’approfondir les fondements de l’IA tout en consolidant mes compétences d’ingénieur en informatique.
+  <div className="text-neutral-300">
+    <p className="indent-8 leading-relaxed">
+      Je m'appelle <strong>Robin BECARD</strong> et je poursuis actuellement un <strong>double diplôme</strong> entre l’<strong>Université de Sherbrooke</strong> et l’<strong>EILCO</strong>. Ce cursus me permet de valider une Maîtrise en intelligence artificielle au Canada parallèlement à mon diplôme d'ingénieur en informatique en France.
     </p>
     <br />
-    <p className="indent-8">
-      Actuellement en cycle ingénieur en <strong>génie informatique</strong> et en <strong>maîtrise en informatique – cheminement intelligence artificielle et science des données</strong>, je m’intéresse particulièrement au <strong>machine learning</strong>, à la <strong>science des données</strong> et au <strong>développement web full‑stack</strong>.
+    <p className="indent-8 leading-relaxed">
+      Ma démarche est centrée sur la <strong>Science des Données</strong> : j'aime explorer des jeux de données complexes pour en extraire des connaissances exploitables. J'ai affiné cette expertise sur des projets à forte valeur scientifique, comme la classification de données d'astéroïdes pour la <strong>NASA</strong> ou l'analyse morphométrique par <strong>Deep Learning (PyTorch)</strong>. Ces expériences m'ont permis de maîtriser l'ensemble du pipeline data, de l'analyse exploratoire (EDA) à la conception de modèles prédictifs avec <strong>Scikit-learn</strong>.
     </p>
     <br />
-    <p className="indent-8">
-      Au fil de mon parcours, j’ai travaillé sur des projets académiques et professionnels en <strong>détection d’anomalies</strong>, en <strong>algorithmes de graphes</strong> et en <strong>applications web</strong>, ainsi que sur des projets personnels mêlant électronique, programmation et 3D. Ces expériences renforcent mes compétences en Python, en outils data (Pandas, NumPy, Scikit‑learn) et en technologies web modernes (HTML, CSS, JavaScript, PHP, React, Symfony).
+    <p className="indent-8 leading-relaxed">
+      Mon bagage en <strong>génie informatique</strong> est pour moi un levier technique indispensable. Il me permet de ne pas limiter l'IA à l'expérimentation, mais de concevoir des architectures logicielles capables de supporter et de déployer ces modèles. Que ce soit pour structurer des pipelines de données ou développer des interfaces via <strong>React/Next.js</strong>, je m'assure que la donnée reste accessible et valorisée.
     </p>
     <br />
-    <p className="indent-8">
-      Mon objectif est de <span className="font-bold">contribuer à des projets innovants en IA et data science</span>, en mettant à profit mon profil d’ingénieur pour concevoir des solutions robustes et utiles. Je suis motivé à rejoindre des équipes où je peux apprendre, expérimenter et participer concrètement à l’essor des technologies numériques.
+    <p className="indent-8 leading-relaxed">
+      Aujourd'hui, je souhaite m'investir pleinement dans des défis liés à l'<strong>IA et à la Data Science</strong>. Mon objectif est de mettre à profit ma double culture ingénieur/recherche pour résoudre des problématiques complexes, en apportant une expertise technique rigoureuse sur le traitement et l'interprétation des données.
     </p>
   </div>
 );
@@ -75,44 +75,90 @@ export const EXPERIENCES = [
   },
 ];
 
-import Projet1 from "../assets/Projet_1.png";
-import Projet2 from "../assets/Projet_2.jpg";
-import Projet3 from "../assets/Projet_3.jpg";
-import Projet4 from "../assets/Projet_4.png";
+import Kingdomino from "../assets/kingdomino_image.png";
+import EmbeddedSystem from "../assets/EmbeddedSystem.png";
+import SmartHome from "../assets/SmartHome.jpg";
+import EilcoWebsite from "../assets/EilcoWebsite.png";
+import FoodRecipes from "../assets/FoodRecipes.jpg";
+import NasaIft712 from "../assets/Nasa.png";
+import ProjetOtolith from "../assets/Otholites.png";
+import ProjetPhytoplankton from "../assets/Phytoplankton.jpg";
 
-export const PROJECTS = [
+export const PROJECTS = [ 
+  {
+  title: "NASA Near-Earth Objects Classification",
+  category: "Machine Learning / Data Science",
+  image: NasaIft712,
+  description:
+    "Étude comparative et implémentation de 6 algorithmes de classification (SVM, Réseaux de neurones, etc.) pour prédire la dangerosité des objets célestes frôlant la Terre, basée sur un jeu de données de la NASA de 300 000 entrées.",
+  technologies: ["Python", "Jupyter Notebook", "Scikit-learn", "Pandas", "Matplotlib"],
+  github_link: "https://github.com/RobinBecard/IFT712_Project",
+},
+{
+  title: "Otolith Landmark Prediction",
+  category: "Deep Learning / Recherche Scientifique",
+  image: ProjetOtolith,
+  description:
+    "Analyse et prédiction de points de repère (landmarks) sur des otolithes de poissons par apprentissage profond. Ce projet vise à automatiser l'extraction de données morphométriques pour faciliter l'étude de la croissance et des populations de poissons.",
+  technologies: ["Python", "PyTorch", "Computer Vision", "Deep Learning", "NumPy"],
+  github_link: "https://github.com/RobinBecard/Otolith-landmark-prediction-analysis",
+},
+{
+  title: "Phytoplankton Insights",
+  category: "Machine Learning / Data Science",
+  image: ProjetPhytoplankton,
+  description:
+    "Utilisation du Machine Learning non supervisé (ACP & K-Means) pour classifier le phytoplancton mondial. L'analyse de 9 484 échantillons a permis d'identifier 4 groupes biologiques majeurs (comme les Diatomées et Cyanobactéries) et de cartographier leur distribution océanique.",
+  technologies: ["Python", "Scikit-Learn", "Pandas", "Matplotlib", "Jupyter Notebook"],
+  github_link: "https://github.com/RobinBecard/Machine-learning-for-phytoplankton-insights",
+},
+  {
+    title: "FoodRecipes",
+    category: "Web & Logiciel",
+    image: FoodRecipes, 
+    description:
+      "Application web de recherche de recettes de cuisine développée avec Angular. L'interface permet d'explorer des catalogues de plats, de filtrer les résultats et de consulter les détails nutritionnels via une architecture par composants.",
+    technologies: ["Angular", "TypeScript", "SCSS", "RxJS"],
+    github_link: "https://github.com/RobinBecard/FoodRecipes",
+  },
+  {
+    title: "Site web pour la vie étudiante",
+    category: "Web & Logiciel",
+    image: EilcoWebsite,
+    description:
+      "Conception d’un site web destiné à centraliser les clubs et associations de l’école, avec gestion de rôles (membres, présidents, administrateur) et suivi personnalisé des clubs.",
+    technologies: ["HTML", "CSS", "PHP", "SQL"],
+    github_link: "",
+  },
+  {
+    title: "Embedded Environment Analysis System",
+    category: "Robotique & Eléctronique",
+    image: EmbeddedSystem,
+    description:
+      "Conception et fabrication d'un robot autonome d'assistance au sauvetage (Rescue-assisting). Le système intègre une analyse multicapteurs en temps réel (gaz, température, pression), un flux vidéo live via ESP32-CAM et un contrôle Bluetooth, le tout abrité dans une structure modulaire imprimée en 3D.",
+    technologies: ["Arduino MEGA", "C++", "SolidWorks", "Impression 3D", "Bluetooth"],
+    github_link: "https://github.com/RobinBecard/Embedded-environment-analysis-system",
+  },
+  {
+  title: "SmartHome",
+  category: "Robotique & Eléctronique",
+  image: SmartHome,
+  description:
+    "Solution domotique intégrée sur Arduino Mega gérant l'automatisation du climat, de l'éclairage et de la sécurité. Le système utilise une machine à états pour la gestion autonome (chauffage, aération, protection pluie) et un protocole série pour le contrôle manuel via application mobile.",
+  technologies: ["C++", "Arduino Mega", "IoT", "Systèmes Embarqués", "Communication Série"],
+  github_link: "https://github.com/RobinBecard/SmartHome",
+},
   {
     title: "Kingdomino",
-    image: Projet1,
+    category: "Développement Jeu Vidéo",
+    image: Kingdomino,
     description:
       "Réalisation d’un jeu vidéo inspiré du jeu de plateau « Kingdomino ». Projet mené en équipe de trois durant le cycle préparatoire, permettant de renforcer mes compétences en algorithmique, gestion de projet et programmation orientée objet.",
     technologies: ["Python", "NumPy", "Pygame"],
-  },
-  {
-    title: "Robot d’analyse de l’environnement pour les secours",
-    image: Projet2,
-    description:
-      "Conception d’un robot capable de se déplacer dans des espaces restreints et de collecter différentes données via des capteurs (gaz, fumée, etc.), avec transmission vers une application mobile dédiée. Ce projet m’a permis de progresser en électronique embarquée, modélisation 3D et intégration de capteurs autour d’une plateforme Arduino.",
-    technologies: ["Arduino", "MIT App Inventor", "SolidWorks", "Fusion 360"],
-  },
-  {
-    title: "Maison connectée",
-    image: Projet3,
-    description:
-      "Développement en équipe d’une maison connectée pilotable automatiquement ou via une application mobile. Intégration de capteurs (gaz, pluie, luminosité…) et d’un système basé sur Arduino. Ce projet m’a donné l’occasion de jouer un rôle de chef d’équipe et de coordonner la bonne réalisation de l’ensemble des fonctionnalités.",
-    technologies: ["Arduino", "MIT App Inventor", "SolidWorks", "Fusion 360"],
-  },
-  {
-    title: "Site web pour la vie étudiante de l’EILCO",
-    image: Projet4,
-    description:
-      "Conception d’un site web destiné à centraliser les clubs et associations de l’école, avec gestion de rôles (membres, présidents, administrateur) et suivi personnalisé des clubs. Le projet a mobilisé des compétences en développement web front‑end et back‑end ainsi qu’en gestion des droits d’accès.",
-    technologies: ["HTML", "CSS", "PHP", "SQL"],
+    github_link: "",
   },
 ];
-
 export const CONTACT = {
-  adress: "Sherbrooke J1H 5E9, Québec, Canada",
-  email: "Robin.Becard@USherbrooke.ca",
-  number: "(+33) 7 71 82 99 16",
+  adresses: ["Sherbrooke J1H 5E9, Québec, Canada", "Polincove 62370, France"],
+  email: ["Robin.Becard@USherbrooke.ca", "robin.becard@etu.eilco.univ-littoral.fr"],
 };

@@ -42,7 +42,6 @@ export const Skills = () => {
 
       <div className="flex flex-col gap-16 px-4">
         
-        {/* SECTION 1 : DATA / IA */}
         <div className="flex flex-col items-start">
           <motion.div 
             whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +61,6 @@ export const Skills = () => {
           </div>
         </div>
 
-        {/* SECTION 2 : DÉVELOPPEMENT & SYSTÈMES */}
         <div className="flex flex-col items-end">
           <motion.div 
             whileInView={{ opacity: 1, x: 0 }}
@@ -82,7 +80,6 @@ export const Skills = () => {
           </div>
         </div>
 
-        {/* SECTION 3 : WEB & CLOUD */}
         <div className="flex flex-col items-start">
           <motion.div 
             whileInView={{ opacity: 1, x: 0 }}
