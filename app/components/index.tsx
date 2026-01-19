@@ -79,7 +79,7 @@ import Kingdomino from "../assets/kingdomino_image.png";
 import EmbeddedSystem from "../assets/EmbeddedSystem.png";
 import SmartHome from "../assets/SmartHome.jpg";
 import EilcoWebsite from "../assets/EilcoWebsite.png";
-import EasyMeal from "../assets/FoodRecipes.jpg";
+import EasyMeal from "../assets/EasyMeal.jpg";
 import NasaIft712 from "../assets/Nasa.png";
 import ProjetOtolith from "../assets/Otholites.png";
 import ProjetPhytoplankton from "../assets/Phytoplankton.jpg";
