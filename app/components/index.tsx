@@ -79,7 +79,7 @@ import Kingdomino from "../assets/kingdomino_image.png";
 import EmbeddedSystem from "../assets/EmbeddedSystem.png";
 import SmartHome from "../assets/SmartHome.jpg";
 import EilcoWebsite from "../assets/EilcoWebsite.png";
-import FoodRecipes from "../assets/FoodRecipes.jpg";
+import EasyMeal from "../assets/FoodRecipes.jpg";
 import NasaIft712 from "../assets/Nasa.png";
 import ProjetOtolith from "../assets/Otholites.png";
 import ProjetPhytoplankton from "../assets/Phytoplankton.jpg";
@@ -113,9 +113,9 @@ export const PROJECTS = [
   github_link: "https://github.com/RobinBecard/Machine-learning-for-phytoplankton-insights",
 },
   {
-    title: "FoodRecipes",
+    title: "EasyMeal",
     category: "Web & Logiciel",
-    image: FoodRecipes, 
+    image: EasyMeal, 
     description:
       "Application web de recherche de recettes de cuisine développée avec Angular. L'interface permet d'explorer des catalogues de plats, de filtrer les résultats et de consulter les détails nutritionnels via une architecture par composants.",
     technologies: ["Angular", "TypeScript", "SCSS", "RxJS"],
